@@ -16,10 +16,10 @@ void Receive()
 }
 int Calculate(float x, float y)
 {
-    printf("%.2f\n", x + y);
-    printf("%.2f\n", x - y);
-    printf("%.2f\n", x * y);
-    printf("%.2f", x / y);
+    printf("%g\n", x + y);
+    printf("%g\n", x - y);
+    printf("%g\n", x * y);
+    printf("%g", x / y);
 }
 int main()
 {

@@ -9,9 +9,9 @@ int main()
     float num1, num2;
     printf("Enter number : ");
     scanf("%f %f", &num1, &num2);
-    printf("%.2f\n", num1 + num2);
-    printf("%.2f\n", num2, num1 - num2);
-    printf("%.2f\n", num1 * num2);
-    printf("%.2f ", num1 / num2);
+    printf("%g + %g = %g\n", num1, num2, num1 + num2);  
+    printf("%g - %g = %g\n", num1, num2, num1 - num2);
+    printf("%g x %g = %g\n", num1, num2, num1 * num2);
+    printf("%g / %g =  %g", num1, num2, num1 / num2);
     return 0;
 }
