@@ -4,26 +4,19 @@
     LANG : C
     AUTHOR : Khunanon Maneesong 64010084
 */
-float num[2];
-void Receive()
+
+int main()
 {
+    float num[2];
     int i = 0;
     printf("Enter number : ");
     for (i; i < 2; i++)
     {
         scanf("%f", &num[i]);
     }
-}
-int Calculate(float x, float y)
-{
-    printf("%g + %g = %g\n", x, y, x + y);
-    printf("%g - %g = %g\n", x, y, x - y);
-    printf("%g x %g = %g\n", x, y, x * y);
-    printf("%g / %g = %g", x, y, x / y);
-}
-int main()
-{
-    Receive();
-    Calculate(num[0], num[1]);
+    printf("%g + %g = %g\n", num[0], num[1], num[0] + num[1]);
+    printf("%g - %g = %g\n", num[0], num[1], num[0] - num[1]);
+    printf("%g x %g = %g\n", num[0], num[1], num[0] * num[1]);
+    printf("%g / %g = %g", num[0], num[1], num[0] / num[1]);
     return 0;
 }
