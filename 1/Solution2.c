@@ -4,22 +4,22 @@
     LANG : C
     AUTHOR : Khunanon Maneesong 64010084
 */
-int num[2];
+float num[2];
 void Receive()
 {
     int i = 0;
     printf("Enter number : ");
     for (i; i < 2; i++)
     {
-        scanf("%d", &num[i]);
+        scanf("%f", &num[i]);
     }
 }
-int Calculate(int x, int y)
+int Calculate(float x, float y)
 {
-    printf("%d + %d = %d\n", x, y, x + y);
-    printf("%d - %d = %d\n", x, y, x - y);
-    printf("%d x %d = %d\n", x, y, x * y);
-    printf("%d / %d = %d", x, y, x / y);
+    printf("%.2f\n", x + y);
+    printf("%.2f\n", x - y);
+    printf("%.2f\n", x * y);
+    printf("%.2f", x / y);
 }
 int main()
 {
