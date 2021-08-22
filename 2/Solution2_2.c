@@ -12,6 +12,7 @@ char y[3];
 int main()
 {
     int sum = 1;
+    printf("Input number : ");
     scanf("%s", x);
     for (int i = 0; i < strlen(x); i++)
     {

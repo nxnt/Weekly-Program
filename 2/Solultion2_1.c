@@ -47,6 +47,7 @@ int Count_num(int y)
 int main()
 {
     int n,sum,count;
+    printf("Input number : ");
     scanf("%d",&n);
     sum=Multiply(n);
     while ( (count = Count_num(sum))>1 )
