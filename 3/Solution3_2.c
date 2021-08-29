@@ -1,23 +1,29 @@
+/*  
+    Problem : จงเขียนโปรแกรมรับตัวเลข 1 ตัวแล้วให้คอมพิวเตอร์วาดรูปเครื่องหมาย * 
+              เป็นปิระมิดที่มีความสูงเท่ากับตัวเลขที่รับเข้ามา ดังตัวอย่าง (Level 3)
+    LANG : C
+    AUTHOR : Khunaon Maneesong 64010084
+*/
 #include <stdio.h>
-
+#include<stdlib.h>
 
 int main()
 {
-    float max=0;
-    float n1,n2,n3,num[3];
-    for (int i = 0; i <3; i++)
+    int n;
+    scanf("%d",&n);
+    for (int y = 0 ; y >= -n ; y--)
     {
-        scanf("%f",&num[i]);  
-    }
-    max=num[0];
-    for(int j=0;j<3;j++)
-    {
-        if (max<num[j])
+        for (int x = -n ; x <= n ; x++)
         {
-            max=num[j];
+            int negative_side = -abs(x);
+            if ( y <= negative_side)
+            {
+
+                printf("*");
+            }
+            else printf(" ");
         }
-        else {}
+        printf("\n");
     }
-    printf("The maximum is %G",max);
     return 0;
 }
