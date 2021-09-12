@@ -8,7 +8,7 @@
 #include<string.h>
 int main()
 {
-    char s[100];
+    char s[1000];
     FILE *f=fopen("c:\\temp\\data.txt","w+");
     printf("Input data string: ");
     while (1)
